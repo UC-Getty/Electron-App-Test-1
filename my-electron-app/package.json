@@ -1,0 +1,15 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "Test App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Nic Hirschfeld",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.1.0"
+  }
+}
