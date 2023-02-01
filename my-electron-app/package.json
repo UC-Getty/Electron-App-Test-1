@@ -4,12 +4,16 @@
   "description": "Test App",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .", 
+    "test": "npx playwright test",
+    "shawn": "npx playwright test1"
   },
   "keywords": [],
-  "author": "Nic Hirschfeld",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^22.1.0"
+    "@playwright/test": "^1.30.0",
+    "electron": "^22.1.0",
+    "playwright": "^1.30.0"
   }
 }
