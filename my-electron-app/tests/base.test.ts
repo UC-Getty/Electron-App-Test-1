@@ -2,7 +2,8 @@ import { _electron as electron } from "playwright";
 import { test, expect } from "@playwright/test";
 
 test("Launch electron app", async () => {
-    const electronApp = await electron.launch({ args: ["."] });
+    const electronApp = await electron.launch({ args: ["."]
+  });
   
     const windowState: {
       isVisible: boolean;

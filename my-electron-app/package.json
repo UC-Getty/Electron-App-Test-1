@@ -5,14 +5,14 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "npx playwright test tests/base.test.ts",
-    "shawn": "npx playwright test tests/shawn.test.ts",
-    "test:update-screenshot": "npx playwright test --update-snapshots"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
     "@playwright/test": "^1.30.0",
     "electron": "^22.1.0",
     "playwright": "^1.30.0"
