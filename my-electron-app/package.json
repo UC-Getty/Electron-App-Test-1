@@ -4,9 +4,10 @@
   "description": "Test App",
   "main": "main.js",
   "scripts": {
-    "start": "electron .", 
-    "test": "npx playwright test",
-    "shawn": "npx playwright test1"
+    "start": "electron .",
+    "test": "npx playwright test tests/base.test.ts",
+    "shawn": "npx playwright test tests/shawn.test.ts",
+    "test:update-screenshot": "npx playwright test --update-snapshots"
   },
   "keywords": [],
   "author": "",
