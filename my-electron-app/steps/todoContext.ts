@@ -13,10 +13,10 @@ Before(async () =>{
     electronApp = await electron.launch({ args: ['main.js'] });
     // electronApp = await electron.launch({ args: ["."] });
     context = electronApp.context();
-    await context.tracing.start({ screenshots: true, snapshots: true });
+    //await context.tracing.start({ screenshots: true, snapshots: true });
     page = await electronApp.firstWindow();
 
-    await page.screenshot({ path: 'tests/screenshot/firstWindow.png' });
+    //await page.screenshot({ path: 'tests/screenshot/firstWindow.png' });
     return page;
 });
 
