@@ -9,7 +9,7 @@ let context: BrowserContext
 test.beforeAll(async () =>{
      // Launch Electron app.
     electronApp = await electron.launch({ args: ['main.js'] });
-    // electronApp = await electron.launch({ args: ["."] });
+    electronApp = await electron.launch({ args: ["."] });
     context = electronApp.context();
     await context.tracing.start({ screenshots: true, snapshots: true });
     page = await electronApp.firstWindow();
@@ -19,8 +19,32 @@ test.beforeAll(async () =>{
 })
 
 
-test.describe('two tests', () => {
+test.describe('test sequence', () => {
+
+test("login", async () =>{
+
+    //Enter username and password and click login
+    await page.fill("//*[@id='username']","test")
+    await page.fill("//*[@id='password']","12345678")
+    await page.click("//*[@id='login']")
+
+    //waits for the element with the xPath is loaded
+    await page.waitForSelector("//*[@id='test-p']")
+
+    //gets the text within that element with the specified xPath
+    const text = await page.$eval("//*[@id='test-p']", (el) => el.textContent)
+
+    //Do an expect test for that text
+    expect(text).toBe('Welcome to your Electron application.')
     
+    //Sleep for 5secs so we can see the page 
+    await page.waitForTimeout(5000);
+
+    // Exit app.
+    // await electronApp.close();
+
+
+})
 
 test('checks for "Welcome to your Electron application." text', async () => {
     //waits for the element with the xPath is loaded
@@ -53,8 +77,9 @@ test("Check if 1 + 2 equals 3", async () =>{
     
     //Sleep for 5secs so we can see the page 
     await page.waitForTimeout(5000);
+
     // Exit app.
-    await electronApp.close();
+    // await electronApp.close();
 
 
 })
