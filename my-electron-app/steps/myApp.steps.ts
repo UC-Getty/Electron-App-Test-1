@@ -8,15 +8,16 @@ import { expect } from '@playwright/test'
 Given('the user is on the {string} page', async (expectedText) => {
     // Write code here that turns the phrase above into concrete actions
     //waits for the element with the xPath is loaded
-    await page.waitForSelector('/html/body/h1')
-    //gets the text within that element with the specified xPath
-    const actualText = await page.$eval("/html/body/h1", (el) => el.textContent)
-    //Do an expect test for that text
-    //expect(text).toBe('Hello World!')
-    expect(actualText).toBe(expectedText)
-    //Sleep for 5secs so we can see the page 
-    await page.waitForTimeout(5000);
-    LOLOLO NICK IS THE BEST AND NIC IS GREAT TOO
+    // await page.waitForSelector('/html/body/h1')
+    // //gets the text within that element with the specified xPath
+    // const actualText = await page.$eval("/html/body/h1", (el) => el.textContent)
+    // //Do an expect test for that text
+    // //expect(text).toBe('Hello World!')
+    // expect(actualText).toBe(expectedText)
+    // //Sleep for 5secs so we can see the page 
+    // await page.waitForTimeout(5000);
+    await expect(page.getByText(expectedText)).toBeVisible();
+
 });
 
 // ? And a user has input their "USERNAME"
