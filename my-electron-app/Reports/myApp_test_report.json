@@ -6,7 +6,7 @@
         "description": "",
         "id": "todo;number-input-and-addition",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 8,
         "name": "Number input and addition",
         "steps": [
           {
@@ -14,72 +14,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2394000000
+              "duration": 2704000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
               "location": "steps/myApp.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1243000000
+              "duration": 5874000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "a user has inputs their username 'test'",
+            "keyword": "Given ",
+            "line": 10,
+            "name": "a user has input their username 'test'",
             "match": {
               "location": "steps/myApp.steps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1267000000
+              "duration": 5134000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "a user has inputs their password '12345678'",
+            "keyword": "Given ",
+            "line": 11,
+            "name": "a user has input their password '12345678'",
             "match": {
-              "location": "steps/myApp.steps.ts:30"
+              "location": "steps/myApp.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 1107000000
+              "duration": 5066000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 12,
             "name": "the user clicks login button",
             "match": {
-              "location": "steps/myApp.steps.ts:38"
+              "location": "steps/myApp.steps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 1306000000
+              "duration": 5148000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 13,
             "name": "the user sees \"Welcome to your Electron application.\"",
             "match": {
-              "location": "steps/myApp.steps.ts:45"
+              "location": "steps/myApp.steps.ts:43"
             },
             "result": {
               "status": "passed",
-              "duration": 1051000000
+              "duration": 5058000000
             }
           },
           {
@@ -87,14 +87,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 297000000
+              "duration": 1000000
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 6
+            "line": 7
           }
         ],
         "type": "scenario"
@@ -103,7 +103,7 @@
         "description": "",
         "id": "todo;number-input-and-addition",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 8,
         "name": "Number input and addition",
         "steps": [
           {
@@ -111,73 +111,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1150000000
+              "duration": 1756000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 9,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
               "location": "steps/myApp.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1185000000
+              "duration": 5182000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "a user has inputs their username 'wrongusername'",
+            "keyword": "Given ",
+            "line": 10,
+            "name": "a user has input their username 'wrongusername'",
             "match": {
               "location": "steps/myApp.steps.ts:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1086000000
+              "status": "failed",
+              "duration": 9000000,
+              "error_message": "page.fill: Target page, context or browser has been closed\n    at World.<anonymous> (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/steps/myApp.steps.ts:24:30)"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "a user has inputs their password 'wrongpassword'",
+            "keyword": "Given ",
+            "line": 11,
+            "name": "a user has input their password '12345'",
             "match": {
-              "location": "steps/myApp.steps.ts:30"
+              "location": "steps/myApp.steps.ts:29"
             },
             "result": {
-              "status": "passed",
-              "duration": 1096000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 12,
             "name": "the user clicks login button",
             "match": {
-              "location": "steps/myApp.steps.ts:38"
+              "location": "steps/myApp.steps.ts:36"
             },
             "result": {
-              "status": "passed",
-              "duration": 1082000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 13,
             "name": "the user sees \"Welcome to your Electron application.\"",
             "match": {
-              "location": "steps/myApp.steps.ts:45"
+              "location": "steps/myApp.steps.ts:43"
             },
             "result": {
-              "status": "failed",
-              "duration": 6008000000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 6000 milliseconds\n    at Timeout._onTimeout (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/node_modules/@cucumber/cucumber/src/user_code_runner.ts:80:18)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -185,14 +185,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 3000000
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 6
+            "line": 7
           }
         ],
         "type": "scenario"
