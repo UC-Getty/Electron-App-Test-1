@@ -13,3 +13,4 @@ So I can add the hello world page
     Examples:
         | username | password |
         | test | 12345678 |
+        | wrongusername | wrongpassword |
