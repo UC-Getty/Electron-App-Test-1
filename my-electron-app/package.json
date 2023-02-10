@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "test": "npx playwright test tests/base.test.ts",
-    "testcuc": "node ./node_modules/.bin/cucumber-js -p test_runner --tags @demo",
+    "testcuc": "node ./node_modules/.bin/cucumber-js -p test_runner",
     "shawnTest": "npx playwright test tests/shawn.test.ts",
     "test:update-screenshot": "npx playwright test --update-snapshots"
   },

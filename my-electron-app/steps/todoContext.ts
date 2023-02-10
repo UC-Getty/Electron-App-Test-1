@@ -6,7 +6,7 @@ let electronApp: ElectronApplication
 let page: Page
 let context: BrowserContext
 
-setDefaultTimeout(60000);
+setDefaultTimeout(6000);
 
 Before(async () =>{
      // Launch Electron app.
