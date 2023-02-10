@@ -1,0 +1,208 @@
+[
+  {
+    "description": "As a user\nI want to login\nSo I can add the hello world page",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo;number-input-and-addition",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Number input and addition",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the user is on the 'LEARN ELECTRON!' page",
+            "match": {
+              "location": "steps/myApp.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user has inputs their username 'test'",
+            "match": {
+              "location": "steps/myApp.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "a user has inputs their password '12345678'",
+            "match": {
+              "location": "steps/myApp.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "steps/myApp.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1306000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user sees \"Welcome to your Electron application.\"",
+            "match": {
+              "location": "steps/myApp.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1051000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 297000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo;number-input-and-addition",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Number input and addition",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the user is on the 'LEARN ELECTRON!' page",
+            "match": {
+              "location": "steps/myApp.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1185000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user has inputs their username 'wrongusername'",
+            "match": {
+              "location": "steps/myApp.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1086000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "a user has inputs their password 'wrongpassword'",
+            "match": {
+              "location": "steps/myApp.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1096000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "steps/myApp.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user sees \"Welcome to your Electron application.\"",
+            "match": {
+              "location": "steps/myApp.steps.ts:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6008000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 6000 milliseconds\n    at Timeout._onTimeout (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/node_modules/@cucumber/cucumber/src/user_code_runner.ts:80:18)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 244000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "todo",
+    "tags": [],
+    "uri": "features/todo.feature"
+  }
+]

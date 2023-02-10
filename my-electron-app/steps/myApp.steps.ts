@@ -16,7 +16,7 @@ Given('the user is on the {string} page', async (expectedText) => {
     expect(actualText).toBe(expectedText)
     //Sleep for 5secs so we can see the page 
     await page.waitForTimeout(5000);
-    LOLOLO NICK IS THE BEST AND NIC IS GREAT TOO
+    // LOLOLO NICK IS THE BEST AND NIC IS GREAT TOO
 });
 
 // ? And a user has input their "USERNAME"

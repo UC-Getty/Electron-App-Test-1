@@ -2,8 +2,12 @@ Feature: todo
 As a user
 I want to login
 So I can add the hello world page
+<<<<<<< Updated upstream
  
 
+=======
+    
+>>>>>>> Stashed changes
     @demo
     Scenario: Number input and addition
         Given the user is on the 'LEARN ELECTRON!' page
