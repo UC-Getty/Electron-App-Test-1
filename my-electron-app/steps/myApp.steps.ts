@@ -15,7 +15,7 @@ Given('the user is on the {string} page', async (expectedText) => {
     // //expect(text).toBe('Hello World!')
     expect(actualText).toBe(expectedText)
    // await expect(page.getByText(expectedText)).toBeVisible();
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(1000);
 });
 
 // ? And a user has input their "USERNAME"
@@ -24,7 +24,7 @@ Given('the user is on the {string} page', async (expectedText) => {
 Given('a user has input their username {string}', async (expectedText) => {
     // Write code here that turns the phrase above into concrete actions
     await page.fill("//*[@id='username']",expectedText)
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(1000);
 });
 
 // ? And a user has input their "PASSWORD"
@@ -33,7 +33,7 @@ Given('a user has input their username {string}', async (expectedText) => {
 Given('a user has input their password {string}', async (expectedText) =>  {
     // Write code here that turns the phrase above into concrete actions
     await page.fill("//*[@id='password']",expectedText)
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(1000);
 });
 
 // ? When the user clicks login button
@@ -42,7 +42,7 @@ Given('a user has input their password {string}', async (expectedText) =>  {
 When('the user clicks login button', async () => {
     // Write code here that turns the phrase above into concrete actions
     await page.click("//*[@id='login']")
-    await page.waitForTimeout(5000); 
+    await page.waitForTimeout(1000); 
 });
 
 // ? Then the user sees "HELLO WORLD"
@@ -51,14 +51,15 @@ When('the user clicks login button', async () => {
 Then('the user sees {string}', async (expectedText) => {
     // Write code here that turns the phrase above into concrete actions
     //waits for the element with the xPath is loaded
-    await page.waitForSelector("//*[@id='test-p']")
+    // await page.waitForSelector(page.getByText(expectedText));
 
-    //gets the text within that element with the specified xPath
-    const actualText = await page.$eval("//*[@id='test-p']", (el) => el.textContent)
+    // //gets the text within that element with the specified xPath
+    // const actualText = await page.$eval("//*[@id='test-p']", (el) => el.textContent)
 
-    //Do an expect test for that text
-    expect(actualText).toBe(expectedText)
+    // //Do an expect test for that text
+    // expect(actualText).toBe(expectedText)
     
+    await expect(page.getByText(expectedText)).toBeVisible();
     //Sleep for 5secs so we can see the page 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(1000);
 });
