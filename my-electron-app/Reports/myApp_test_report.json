@@ -1,12 +1,12 @@
 [
   {
-    "description": "As a user\nI want to login\nSo I can add the hello world page",
+    "description": "As a user\nI want to login\nSo I can add the hello world page\n<<<<<<< Updated upstream\n \n\n=======\n    \n>>>>>>> Stashed changes",
     "elements": [
       {
         "description": "",
         "id": "todo;number-input-and-addition",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 12,
         "name": "Number input and addition",
         "steps": [
           {
@@ -14,72 +14,67 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2394000000
+              "duration": 1972000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 13,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
               "location": "steps/myApp.steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1243000000
+              "status": "failed",
+              "duration": 17000000,
+              "error_message": "page.waitForSelector: Unexpected token \"/\" while parsing selector \"/html/body/h1\"\n    at World.<anonymous> (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/steps/myApp.steps.ts:11:30)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "a user has input their 'test'",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "a user has inputs their username 'test'",
-            "match": {
-              "location": "steps/myApp.steps.ts:22"
-            },
+            "line": 15,
+            "name": "a user has input their '12345678'",
             "result": {
-              "status": "passed",
-              "duration": 1267000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "a user has inputs their password '12345678'",
-            "match": {
-              "location": "steps/myApp.steps.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1107000000
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 16,
             "name": "the user clicks login button",
             "match": {
-              "location": "steps/myApp.steps.ts:38"
+              "location": "steps/myApp.steps.ts:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 1306000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 17,
             "name": "the user sees \"Welcome to your Electron application.\"",
             "match": {
-              "location": "steps/myApp.steps.ts:45"
+              "location": "steps/myApp.steps.ts:44"
             },
             "result": {
-              "status": "passed",
-              "duration": 1051000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -87,14 +82,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 297000000
+              "duration": 261000000
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 6
+            "line": 11
           }
         ],
         "type": "scenario"
@@ -103,7 +98,7 @@
         "description": "",
         "id": "todo;number-input-and-addition",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 12,
         "name": "Number input and addition",
         "steps": [
           {
@@ -111,73 +106,67 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1150000000
+              "duration": 1357000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 13,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
               "location": "steps/myApp.steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1185000000
+              "status": "failed",
+              "duration": 8000000,
+              "error_message": "page.waitForSelector: Unexpected token \"/\" while parsing selector \"/html/body/h1\"\n    at World.<anonymous> (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/steps/myApp.steps.ts:11:30)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "a user has input their 'wrongusername'",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "a user has inputs their username 'wrongusername'",
-            "match": {
-              "location": "steps/myApp.steps.ts:22"
-            },
+            "line": 15,
+            "name": "a user has input their '12345'",
             "result": {
-              "status": "passed",
-              "duration": 1086000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "a user has inputs their password 'wrongpassword'",
-            "match": {
-              "location": "steps/myApp.steps.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1096000000
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 16,
             "name": "the user clicks login button",
             "match": {
-              "location": "steps/myApp.steps.ts:38"
+              "location": "steps/myApp.steps.ts:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 1082000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 17,
             "name": "the user sees \"Welcome to your Electron application.\"",
             "match": {
-              "location": "steps/myApp.steps.ts:45"
+              "location": "steps/myApp.steps.ts:44"
             },
             "result": {
-              "status": "failed",
-              "duration": 6008000000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 6000 milliseconds\n    at Timeout._onTimeout (/Users/nicholaslor/Desktop/Electron-App-Test-1/my-electron-app/node_modules/@cucumber/cucumber/src/user_code_runner.ts:80:18)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -185,14 +174,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 242000000
             }
           }
         ],
         "tags": [
           {
             "name": "@demo",
-            "line": 6
+            "line": 11
           }
         ],
         "type": "scenario"
