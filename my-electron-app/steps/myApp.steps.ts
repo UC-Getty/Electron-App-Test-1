@@ -37,7 +37,7 @@ Given('a user has inputs their password {string}', async (expectedText) =>  {
     //await page.getByPlaceholder("password").fill(expectedText)
    await page.waitForTimeout(1000);
 });
-
+//test
 // ? When the user clicks login button
 // Undefined. Implement with the following snippet:
 
