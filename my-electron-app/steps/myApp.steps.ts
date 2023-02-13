@@ -1,6 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber'
 import { page } from '../steps/todoContext'
 import { expect } from '@playwright/test'
+import {login} from '../testFramework/login'
 
 // ? Given the user is on the 'LOGIN PAGE'
 // Undefined. Implement with the following snippet:
@@ -22,9 +23,7 @@ Given('the user is on the {string} page', async (expectedText) => {
 // Undefined. Implement with the following snippet:
 
 Given('a user has input their username {string}', async (expectedText) => {
-    // Write code here that turns the phrase above into concrete actions
-    await page.fill("//*[@id='username']",expectedText)
-    await page.waitForTimeout(1000);
+    await login(expectedText);
 });
 
 // ? And a user has input their "PASSWORD"
