@@ -34,7 +34,6 @@ Given('a user has input their password {string}', async (expectedText) =>  {
     await page.fill("//*[@id='password']",expectedText)
     await page.waitForTimeout(1000);
 });
-
 // ? When the user clicks login button
 // Undefined. Implement with the following snippet:
 
