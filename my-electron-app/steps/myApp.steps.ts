@@ -21,7 +21,7 @@ Given('the user is on the {string} page', async (expectedText) => {
 // ? And a user has input their "USERNAME"
 // Undefined. Implement with the following snippet:
 
-Given('a user has inputs their username {string}', async (expectedText) => {
+Given('a user has input their username {string}', async (expectedText) => {
     // Write code here that turns the phrase above into concrete actions
     // await page.getByPlaceholder('username').fill(expectedText)
     await page.fill("//*[@id='username']",expectedText)
@@ -31,11 +31,10 @@ Given('a user has inputs their username {string}', async (expectedText) => {
 // ? And a user has input their "PASSWORD"
 // Undefined. Implement with the following snippet:
 
-Given('a user has inputs their password {string}', async (expectedText) =>  {
+Given('a user has input their password {string}', async (expectedText) =>  {
     // Write code here that turns the phrase above into concrete actions
     await page.fill("//*[@id='password']",expectedText)
-    //await page.getByPlaceholder("password").fill(expectedText)
-   await page.waitForTimeout(1000);
+    await page.waitForTimeout(1000);
 });
 // ? When the user clicks login button
 // Undefined. Implement with the following snippet:
@@ -52,14 +51,15 @@ When('the user clicks login button', async () => {
 Then('the user sees {string}', async (expectedText) => {
     // Write code here that turns the phrase above into concrete actions
     //waits for the element with the xPath is loaded
-    await page.waitForSelector("//*[@id='test-p']")
+    // await page.waitForSelector(page.getByText(expectedText));
 
-    //gets the text within that element with the specified xPath
-    const actualText = await page.$eval("//*[@id='test-p']", (el) => el.textContent)
+    // //gets the text within that element with the specified xPath
+    // const actualText = await page.$eval("//*[@id='test-p']", (el) => el.textContent)
 
-    //Do an expect test for that text
-    expect(actualText).toBe(expectedText)
+    // //Do an expect test for that text
+    // expect(actualText).toBe(expectedText)
     
+    await expect(page.getByText(expectedText)).toBeVisible();
     //Sleep for 5secs so we can see the page 
     await page.waitForTimeout(1000);
 });

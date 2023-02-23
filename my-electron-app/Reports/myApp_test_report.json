@@ -1,0 +1,207 @@
+[
+  {
+    "description": "As a user\nI want to login\nSo I can add the hello world page",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo;number-input-and-addition",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Number input and addition",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is on the 'LEARN ELECTRON!' page",
+            "match": {
+              "location": "steps\\myApp.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1144000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "a user has input their username 'test'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1050000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "a user has input their password '12345678'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1078000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "steps\\myApp.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user sees 'Welcome to your Electron application.'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1114000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 753000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo;number-input-and-addition",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Number input and addition",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is on the 'LEARN ELECTRON!' page",
+            "match": {
+              "location": "steps\\myApp.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1175000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "a user has input their username 'wrongusername'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "a user has input their password '12345'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1065000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "steps\\myApp.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user sees 'LOGIN FAILED'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1025000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 582000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "todo",
+    "tags": [],
+    "uri": "features\\todo.feature"
+  }
+]
