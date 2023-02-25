@@ -17,3 +17,4 @@ So I can add the hello world page
         | username | password | prompt |
         | test | 12345678 | Welcome to your Electron application. |
         | wrongusername | 12345 | LOGIN FAILED |
+        | testfail | 12345 | hi |
