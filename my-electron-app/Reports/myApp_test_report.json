@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 505000000
+              "duration": 493000000
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 9,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
-              "location": "steps\\myApp.steps.ts:9"
+              "location": "steps\\myApp.steps.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1089000000
+              "duration": 1096000000
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 10,
             "name": "a user has input their username 'test'",
             "match": {
-              "location": "steps\\myApp.steps.ts:23"
+              "location": "steps\\myApp.steps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 1047000000
+              "duration": 1038000000
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 11,
             "name": "a user has input their password '12345678'",
             "match": {
-              "location": "steps\\myApp.steps.ts:28"
+              "location": "steps\\myApp.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1061000000
+              "duration": 1038000000
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 12,
             "name": "the user clicks login button",
             "match": {
-              "location": "steps\\myApp.steps.ts:35"
+              "location": "steps\\myApp.steps.ts:49"
             },
             "result": {
               "status": "passed",
-              "duration": 1088000000
+              "duration": 1072000000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 14,
             "name": "the user sees 'Welcome to your Electron application.'",
             "match": {
-              "location": "steps\\myApp.steps.ts:42"
+              "location": "steps\\myApp.steps.ts:56"
             },
             "result": {
               "status": "passed",
-              "duration": 1039000000
+              "duration": 1047000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 131000000
             }
           }
         ],
@@ -111,7 +111,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 877000000
             }
           },
           {
@@ -120,11 +120,11 @@
             "line": 9,
             "name": "the user is on the 'LEARN ELECTRON!' page",
             "match": {
-              "location": "steps\\myApp.steps.ts:9"
+              "location": "steps\\myApp.steps.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1098000000
+              "duration": 1118000000
             }
           },
           {
@@ -133,33 +133,7 @@
             "line": 10,
             "name": "a user has input their username 'wrongusername'",
             "match": {
-              "location": "steps\\myApp.steps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1054000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "a user has input their password '12345'",
-            "match": {
-              "location": "steps\\myApp.steps.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1048000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "the user clicks login button",
-            "match": {
-              "location": "steps\\myApp.steps.ts:35"
+              "location": "steps\\myApp.steps.ts:36"
             },
             "result": {
               "status": "passed",
@@ -168,15 +142,41 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "the user sees 'LOGIN FAILED'",
+            "keyword": "Given ",
+            "line": 11,
+            "name": "a user has input their password '12345'",
             "match": {
               "location": "steps\\myApp.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1027000000
+              "duration": 1032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "steps\\myApp.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user sees 'LOGIN FAILED'",
+            "match": {
+              "location": "steps\\myApp.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024000000
             }
           },
           {
@@ -184,7 +184,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 150000000
+              "duration": 119000000
             }
           }
         ],
