@@ -1,7 +1,7 @@
 import { After, Before, setDefaultTimeout, World} from "@cucumber/cucumber"
 import { openApp, closeApp, page, electronApp } from '../testFramework/open'
 
-setDefaultTimeout(6000);
+//setDefaultTimeout(6000);
 
 Before(async () =>{
     return await openApp();
