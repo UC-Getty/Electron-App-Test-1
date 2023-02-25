@@ -10,7 +10,6 @@ Before(async () =>{
 After(async function () {
     var buffer = await page.screenshot();
     this.attach(buffer,"image/png");
-
     await closeApp();
 
 });

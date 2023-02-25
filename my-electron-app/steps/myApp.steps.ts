@@ -6,6 +6,7 @@ Given('the user is on the {string} page', async (expectedText) => {
     await login.onPageSpecific(expectedText, location);
 });
 
+
 Given('a user has input their username {string}', async (expectedText) => {
     const location = "//*[@id='username']";
     await login.username(expectedText, location);

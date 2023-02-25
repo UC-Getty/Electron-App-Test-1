@@ -16,6 +16,7 @@ export async function openApp() {
 }
 
 export async function closeApp() {
+    
     await electronApp.close();
 }
 
